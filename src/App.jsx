@@ -1,6 +1,7 @@
-import Profile from "./components/Profile/Profile"
-import data from './userData.json'
-
+import Profile from "./components/Profile/Profile";
+import data from "./userData.json";
+import FriendList from "./components/FriendList/FriendList";
+import friends from "./friends.json";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
         avatar={data.avatar}
         stats={data.stats}
       />
+      <FriendList friends={friends} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
