@@ -1,0 +1,30 @@
+th,
+td {
+  width: calc(100% / 3);
+  border: 2px solid black;
+  padding: 8px;
+  text-align: left;
+  color: black;
+  text-align: center;
+}
+
+.table {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+.head {
+  background-color: rgb(59, 58, 58);
+}
+
+.item {
+  text-align: center;
+}
+
+.value {
+  margin-left: auto;
+  margin-right: auto;
+}
