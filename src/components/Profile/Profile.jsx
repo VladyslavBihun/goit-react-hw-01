@@ -1,25 +1,27 @@
+import css from "./Profile.module.css";
+
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div>
-      <div>
-        <img src={avatar} alt={username} />
-        <p>{username}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+    <div className={css.profile}>
+      <div className={css.wrapCard}>
+        <img className={css.img} src={avatar} alt={username} />
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{stats.followers}</span>
+      <ul className={css.list}>
+        <li className={css.item}>
+          <span className={css.statName}>Followers</span>
+          <span className={css.stat}>{stats.followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>{stats.views}</span>
+        <li className={css.item}>
+          <span className={css.statName}>Views</span>
+          <span className={css.stat}>{stats.views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>{stats.likes}</span>
+        <li className={css.item}>
+          <span className={css.statName}>Likes</span>
+          <span className={css.stat}>{stats.likes}</span>
         </li>
       </ul>
     </div>

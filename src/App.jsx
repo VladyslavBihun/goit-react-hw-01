@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Profile
-        name={data.username}
+        username={data.username}
         tag={data.tag}
         location={data.location}
         avatar={data.avatar}
